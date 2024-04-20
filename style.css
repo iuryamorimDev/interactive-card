@@ -23,7 +23,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.backcard {
+.backCard {
   background-image: url(./images/bg-card-back.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
   z-index: -1;
 }
 
-.backnumber {
+.backNumber {
   color: white;
   font-size: 10px;
   height: 100%;
@@ -45,7 +45,7 @@ body {
   padding-right: 35px;
 }
 
-.frontcard {
+.frontCard {
   background-image: url(./images/bg-card-front.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -57,20 +57,20 @@ body {
   left: 16px;
   padding-top: 15px;
 }
-.circle {
+.Circle {
   display: flex;
   align-items: center;
   padding-left: 19px;
 }
 
-.bigcircle {
+.bigCircle {
   width: 30px;
   height: 30px;
   border-radius: 100%;
   background-color: white;
 }
 
-.smallcircle {
+.smallCircle {
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -85,23 +85,23 @@ body {
   margin-top: 39px;
 }
 
-.frontnumber {
+.frontNumber {
   letter-spacing: 2px;
   font-size: 18px;
 }
 .form,
-.formcompleted {
+.formCompleted {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.center {
+.Center {
   text-align: center;
   display: none;
 }
 
-.cardname {
+.cardName {
   display: flex;
   justify-content: space-between;
   font-size: 10px;
@@ -109,8 +109,8 @@ body {
   margin-top: 15px;
 }
 
-.cardholdername,
-.cardnumber {
+.cardHolderName,
+.cardNumber {
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -119,12 +119,12 @@ body {
   font-weight: bold;
 }
 
-.cardnumber,
-.datecvc {
+.cardNumber,
+.dateCvc {
   margin-top: 22px;
 }
-.cardholdername input,
-.cardnumber input {
+.cardHolderName input,
+.cardNumber input {
   width: 310px;
   height: 41px;
   border-radius: 10px;
@@ -137,12 +137,12 @@ body {
   margin-top: 8px;
 }
 
-.numbererror {
+.numberError {
   color: red;
   display: none;
 }
 
-.datecvc {
+.dateCvc {
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--Very-dark-violet);
@@ -166,11 +166,11 @@ body {
   margin-top: 30px;
   position: relative;
 }
-.monthyearerror {
+.monthYearError {
   display: none;
 }
 
-.cvcerror {
+.cvcError {
   position: absolute;
   top: 0;
   right: 60px;
@@ -227,31 +227,31 @@ body {
     background-image: url(./images/bg-main-desktop.png);
     background-position: left;
   }
-  .backcard {
+  .backCard {
     top: 470px;
     left: 260px;
     width: 445px;
     height: 243px;
   }
-  .backnumber {
+  .backNumber {
     font-size: 15px;
     padding-right: 50px;
   }
-  .frontcard {
+  .frontCard {
     top: -54px;
     left: 164px;
     width: 445px;
     height: 243px;
     padding-top: 27px;
   }
-  .circle {
+  .Circle {
     padding-left: 29px;
   }
-  .bigcircle {
+  .bigCircle {
     width: 45px;
     height: 45px;
   }
-  .smallcircle {
+  .smallCircle {
     width: 20px;
     height: 20px;
     margin-left: 17px;
@@ -259,24 +259,24 @@ body {
   .details {
     margin-top: 65px;
   }
-  .frontnumber {
+  .frontNumber {
     font-size: 30px;
   }
-  .cardname {
+  .cardName {
     font-size: 16px;
     margin-top: 20px;
   }
 
   .form,
-  .formcompleted {
+  .formCompleted {
     align-items: flex-end;
     padding-right: 210px;
     position: relative;
     bottom: 230px;
   }
 
-  .cardholdername input,
-  .cardnumber input {
+  .cardHolderName input,
+  .cardNumber input {
     width: 363px;
     font-size: 22px;
   }
