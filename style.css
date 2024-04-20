@@ -89,6 +89,17 @@ body {
   letter-spacing: 2px;
   font-size: 18px;
 }
+.form,
+.formcompleted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+  display: none;
+}
 
 .cardname {
   display: flex;
@@ -111,4 +122,178 @@ body {
 .cardnumber,
 .datecvc {
   margin-top: 22px;
+}
+.cardholdername input,
+.cardnumber input {
+  width: 310px;
+  height: 41px;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+  border: 1px solid var(--Light-grayish-violet);
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.numbererror {
+  color: red;
+  display: none;
+}
+
+.datecvc {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--Very-dark-violet);
+  font-weight: bold;
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+  width: 192px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+  margin-top: 7px;
+}
+
+.error {
+  color: red;
+  margin-top: 30px;
+  position: relative;
+}
+.monthyearerror {
+  display: none;
+}
+
+.cvcerror {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: none;
+}
+
+.inputs input {
+  width: 70px;
+  height: 41px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  outline: none;
+  border: 1px solid var(--Light-grayish-violet);
+  border-radius: 10px;
+}
+
+.inputs .cvc {
+  width: 160px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.button,
+.continue {
+  width: 320px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  color: var(--Light-grayish-violet);
+  background-color: var(--Very-dark-violet);
+}
+
+.thankyou {
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--Very-dark-violet);
+  margin-top: 40px;
+}
+
+.added {
+  font-size: 18px;
+  color: var(--Dark-grayish-violet);
+  margin-top: 16px;
+}
+.continue {
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 385px) {
+  body {
+    background-image: url(./images/bg-main-desktop.png);
+    background-position: left;
+  }
+  .backcard {
+    top: 470px;
+    left: 260px;
+    width: 445px;
+    height: 243px;
+  }
+  .backnumber {
+    font-size: 15px;
+    padding-right: 50px;
+  }
+  .frontcard {
+    top: -54px;
+    left: 164px;
+    width: 445px;
+    height: 243px;
+    padding-top: 27px;
+  }
+  .circle {
+    padding-left: 29px;
+  }
+  .bigcircle {
+    width: 45px;
+    height: 45px;
+  }
+  .smallcircle {
+    width: 20px;
+    height: 20px;
+    margin-left: 17px;
+  }
+  .details {
+    margin-top: 65px;
+  }
+  .frontnumber {
+    font-size: 30px;
+  }
+  .cardname {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .form,
+  .formcompleted {
+    align-items: flex-end;
+    padding-right: 210px;
+    position: relative;
+    bottom: 230px;
+  }
+
+  .cardholdername input,
+  .cardnumber input {
+    width: 363px;
+    font-size: 22px;
+  }
+  .inputs {
+    width: 373px;
+    margin-top: 7px;
+  }
+  .inputs input {
+    width: 75px;
+  }
+  .inputs .cvc {
+    width: 190px;
+    padding-left: 20px;
+  }
+  .button,
+  .continue {
+    width: 370px;
+    font-size: 16px;
+  }
 }
