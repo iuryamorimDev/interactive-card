@@ -3,6 +3,7 @@ let continueButton = document.querySelector(".continue");
 
 let cardHolderName = document.querySelector(".cardHolderNameInput");
 let cardHolderNumber = document.querySelector(".cardHolderNumberInput");
+
 let month = document.querySelector(".month");
 let year = document.querySelector(".year");
 let cvc = document.querySelector(".cvc");
@@ -28,6 +29,8 @@ button.addEventListener("click", function () {
   monthFun();
   yearFun();
   cvcFun();
+  form.style.display = "none";
+  thankyou.style.display = "block";
 });
 
 continueButton.addEventListener("click", function () {});
@@ -58,8 +61,8 @@ let cardNumberFun = function () {
   }
 };
 
-let cardMonthFun = function () {
-  if (inputs[2].value.match(/^\d+/) && month.value.length === 2) {
+let monthFun = function () {
+  if (inputs[2].Value.match(/^\d+/) && month.value.length === 2) {
     monthCard.innerHTML = month.value;
     inputs[2].style.borderColor = "hsl(270, 3%, 87%)";
     monthYearError.style.display = "none";
